@@ -1,20 +1,18 @@
-# Logika AI Canvas
+# Logika AI Canvas . Website rebuild v3
 
-Static rebuild prepared in Chat.
+This version is rebuilt to follow the richer ChatGPT-hosted visual style more closely.
 
-Current requested changes:
-1. On Page 1, replace the old hero links "Explore the canvas↘" and "Visit YouTube↗" with:
-   - "The Approach" linking to the Approach section.
-   - "Insights" linking to the Insights section.
-2. Keep the old hero links commented in the HTML for possible later restoration.
-3. Comment out Page 2 containing "Useful thinking for the messy middle of AI change."
-4. Pages 3, 4 and 5 remain unchanged.
-5. The original transparent horizontal Logika AI Canvas logo is retained.
+What changed in v3:
+1. Restored a darker, richer Page 1 hero treatment with the large working-canvas panel.
+2. Kept the visible Page 1 buttons as "The Approach" and "Insights".
+3. Kept the old hero links commented out in the HTML.
+4. Kept Page 2 commented out.
+5. Restored a dark Approach section with three horizontal rows.
+6. Restored the blue visual panel beside the AI-First Transformation article.
+7. Restored the dark Continue the Conversation section.
+8. Kept the original transparent horizontal logo.
 
-Files:
-- index.html
-- styles.css
-- script.js
-- logo-horizontal-transparent-2400.png
-
-This structure is ready for GitHub and Cloudflare Pages after visual verification.
+Deploy:
+- Replace the repository files with the files from this package.
+- Commit the changes to `main`.
+- Cloudflare Pages will redeploy automatically.

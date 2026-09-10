@@ -7,7 +7,7 @@
   <title>Logika AI Canvas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
         <a href="#home">Home</a>
         <a href="#approach">Approach</a>
         <a href="#insights">Insights</a>
-        <a href="#connect">Connect</a>
+        <a class="nav-pill" href="#connect">Connect</a>
       </nav>
     </div>
   </header>
@@ -31,10 +31,11 @@
 
     <!-- PAGE 1 / HERO -->
     <section class="hero" id="home">
-      <div class="hero-grid shell">
+      <div class="hero-backdrop"></div>
+      <div class="shell hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">PRACTICAL AI TRANSFORMATION</p>
-          <h1>Turn AI ambition into work that works.</h1>
+          <p class="eyebrow eyebrow-light">PRACTICAL AI TRANSFORMATION</p>
+          <h1>Turn AI ambition into <span>work that works.</span></h1>
           <p class="hero-lede">
             Clear frameworks, grounded examples, and practical experiments for leaders and teams navigating AI-assisted work.
           </p>
@@ -59,14 +60,26 @@
         </div>
 
         <div class="hero-visual" aria-hidden="true">
-          <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div>
-          <div class="canvas-card card-one"><span>01</span><strong>Frame</strong></div>
-          <div class="canvas-card card-two"><span>02</span><strong>Redesign</strong></div>
-          <div class="canvas-card card-three"><span>03</span><strong>Prove</strong></div>
-          <div class="signal-dot dot-one"></div>
-          <div class="signal-dot dot-two"></div>
-          <div class="signal-dot dot-three"></div>
+          <div class="visual-board">
+            <p class="board-label">THE WORKING CANVAS</p>
+            <div class="board-lines line-x"></div>
+            <div class="board-lines line-y"></div>
+
+            <div class="board-card board-card-one">
+              <span>01</span>
+              <strong>Frame the real<br>problem</strong>
+            </div>
+
+            <div class="board-card board-card-two accent-blue">
+              <span>02</span>
+              <strong>Redesign the work</strong>
+            </div>
+
+            <div class="board-card board-card-three accent-teal">
+              <span>03</span>
+              <strong>Prove what changed</strong>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -76,83 +89,53 @@
 
     <section class="section section-muted" id="canvas">
       <div class="shell">
-        <p class="eyebrow">THE WORKING CANVAS</p>
-        <div class="three-step">
-          <article><span>01</span><h3>Frame the real problem</h3></article>
-          <article><span>02</span><h3>Redesign the work</h3></article>
-          <article><span>03</span><h3>Prove what changed</h3></article>
-        </div>
-
-        <div class="section-head topics-head">
-          <div>
-            <p class="eyebrow">WHAT YOU WILL FIND</p>
-            <h2>Useful thinking for the messy middle of AI change.</h2>
-          </div>
-          <p>Less theatre. More clarity about decisions, workflows, evidence, and the role people continue to play.</p>
-        </div>
-
-        <div class="topic-grid">
-          <article class="topic-card">
-            <span class="number">01</span>
-            <p class="micro">TRANSFORMATION</p>
-            <h3>AI transformation</h3>
-            <p>Move beyond isolated pilots. Explore how work, roles, decisions, and operating models need to change.</p>
-            <span class="card-link">Frameworks and field notes</span>
-          </article>
-          <article class="topic-card">
-            <span class="number">02</span>
-            <p class="micro">TOOLS</p>
-            <h3>Tools and applied AI</h3>
-            <p>Understand where assistants, agents, and practical AI tools can improve real work without creating unnecessary complexity.</p>
-            <span class="card-link">Use cases and experiments</span>
-          </article>
-          <article class="topic-card">
-            <span class="number">03</span>
-            <p class="micro">GOVERNANCE</p>
-            <h3>Governance that enables</h3>
-            <p>Make accountability, evidence, risk boundaries, and responsible adoption clear enough for teams to move with confidence.</p>
-            <span class="card-link">Guardrails and measures</span>
-          </article>
-        </div>
+        <p class="eyebrow">WHAT YOU WILL FIND</p>
+        <h2>Useful thinking for the messy middle of AI change.</h2>
       </div>
     </section>
     -->
 
     <!-- PAGE 3 / APPROACH -->
     <section class="section approach-section" id="approach">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">THE APPROACH</p>
-            <h2>A practical path from possibility to proof.</h2>
-          </div>
+      <div class="shell approach-layout">
+        <div class="approach-copy">
+          <p class="eyebrow eyebrow-light">THE APPROACH</p>
+          <h2>A practical path from possibility to proof.</h2>
           <p>
             AI transformation becomes manageable when teams separate three questions that are often mixed together.
           </p>
         </div>
 
-        <div class="approach-grid">
-          <article class="approach-card">
-            <span>01</span>
-            <h3>What should change?</h3>
-            <p>Start with the outcome and the work around it, not with a tool looking for a use case.</p>
+        <div class="approach-list">
+          <article class="approach-row">
+            <span class="row-number">01</span>
+            <div class="row-content">
+              <h3>What should change?</h3>
+              <p>Start with the outcome and the work around it, not with a tool looking for a use case.</p>
+            </div>
           </article>
-          <article class="approach-card">
-            <span>02</span>
-            <h3>How should humans and AI work together?</h3>
-            <p>Make roles, boundaries, escalation, and accountability explicit before scaling.</p>
+
+          <article class="approach-row">
+            <span class="row-number">02</span>
+            <div class="row-content">
+              <h3>How should humans and AI work together?</h3>
+              <p>Make roles, boundaries, escalation, and accountability explicit before scaling.</p>
+            </div>
           </article>
-          <article class="approach-card">
-            <span>03</span>
-            <h3>What evidence earns trust?</h3>
-            <p>Measure useful change in behaviour and outcomes, not activity or AI adoption alone.</p>
+
+          <article class="approach-row">
+            <span class="row-number">03</span>
+            <div class="row-content">
+              <h3>What evidence earns trust?</h3>
+              <p>Measure useful change in behaviour and outcomes, not activity or AI adoption alone.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
     <!-- PAGE 4 / INSIGHTS -->
-    <section class="section section-muted" id="insights">
+    <section class="section insights-section section-muted" id="insights">
       <div class="shell">
         <div class="section-head insights-head">
           <div>
@@ -163,44 +146,55 @@
         </div>
 
         <article class="featured-insight">
-          <div>
+          <div class="insight-visual" aria-hidden="true">
+            <div class="visual-ring ring-one"></div>
+            <div class="visual-ring ring-two"></div>
+            <div class="visual-dot dot-a"></div>
+            <div class="visual-dot dot-b"></div>
+            <div class="visual-dot dot-c"></div>
+            <div class="visual-words">
+              <span>HUMANS</span>
+              <b>+</b>
+              <span>AI AGENTS</span>
+            </div>
+          </div>
+
+          <div class="insight-copy">
             <p class="micro">AI TRANSFORMATION · FIRST ARTICLE</p>
             <h3>AI-First Transformation: How to Redesign Work Around Humans and AI Agents</h3>
             <p>
               A practical introduction to moving beyond isolated tools and redesigning work around human judgment,
               agent capability, and measurable outcomes.
             </p>
+            <div class="status">In review</div>
           </div>
-          <div class="status">In review</div>
         </article>
       </div>
     </section>
 
     <!-- PAGE 5 / CONNECT -->
     <section class="section connect-section" id="connect">
-      <div class="shell">
-        <div class="section-head">
-          <div>
-            <p class="eyebrow">CONTINUE THE CONVERSATION</p>
-            <h2>Follow the work as the canvas evolves.</h2>
-          </div>
+      <div class="shell connect-layout">
+        <div class="connect-copy">
+          <p class="eyebrow eyebrow-light">CONTINUE THE CONVERSATION</p>
+          <h2>Follow the work as the canvas evolves.</h2>
         </div>
 
-        <div class="connect-grid">
-          <a class="connect-card" href="#" aria-label="YouTube link coming soon">
-            <span class="micro">YOUTUBE</span>
+        <div class="connect-list">
+          <a class="connect-row" href="#" aria-label="YouTube link coming soon">
+            <span class="connect-label">YOUTUBE</span>
             <strong>Watch and subscribe</strong>
-            <span class="arrow">↗</span>
+            <span class="connect-arrow">↗</span>
           </a>
-          <a class="connect-card" href="#" aria-label="Instagram link coming soon">
-            <span class="micro">INSTAGRAM</span>
+          <a class="connect-row" href="#" aria-label="Instagram link coming soon">
+            <span class="connect-label">INSTAGRAM</span>
             <strong>Follow the visual notes</strong>
-            <span class="arrow">↗</span>
+            <span class="connect-arrow">↗</span>
           </a>
-          <a class="connect-card" href="mailto:">
-            <span class="micro">EMAIL</span>
+          <a class="connect-row" href="mailto:">
+            <span class="connect-label">EMAIL</span>
             <strong>Start a conversation</strong>
-            <span class="arrow">↗</span>
+            <span class="connect-arrow">↗</span>
           </a>
         </div>
       </div>
