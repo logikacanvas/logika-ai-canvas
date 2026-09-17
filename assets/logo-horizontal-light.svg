@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1320 360" role="img" aria-labelledby="title desc">
+  <title id="title">Logika AI Canvas</title>
+  <desc id="desc">Logika AI Canvas logo with overlapping cyan, blue and violet rounded squares and the tagline Ideas Insights Impact.</desc>
+  <defs>
+    <linearGradient id="cyanBlue" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#16d9de"/>
+      <stop offset="1" stop-color="#1b86ff"/>
+    </linearGradient>
+    <linearGradient id="blueViolet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b73ff"/>
+      <stop offset="1" stop-color="#8452ee"/>
+    </linearGradient>
+    <linearGradient id="overlap" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#83ddff" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#b9bbff" stop-opacity=".78"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(35 58)">
+    <rect x="76" y="0" width="176" height="176" rx="44" fill="url(#blueViolet)"/>
+    <rect x="0" y="74" width="176" height="176" rx="44" fill="url(#cyanBlue)"/>
+    <rect x="76" y="74" width="100" height="102" rx="32" fill="url(#overlap)"/>
+  </g>
+  <g font-family="Inter, Arial, sans-serif" fill="#071a44">
+    <text x="355" y="167" font-size="88" font-weight="700" letter-spacing="-2">Logika AI Canvas</text>
+    <text x="360" y="236" font-size="31" font-weight="500" letter-spacing="11">IDEAS · INSIGHTS · IMPACT</text>
+  </g>
+</svg>
