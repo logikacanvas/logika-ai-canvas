@@ -80,6 +80,16 @@ const ARTICLES = [
     search: "prompt engineering frameworks LLM prompts AI"
   },
   {
+    title: "The Rise of Smart Machines III-From Curiosity to Mastery in AI",
+    category: "AI + ML LEARNING",
+    description: "A practical next step in the Smart Machines series, moving from AI fundamentals toward deeper learning and applied understanding.",
+    date: "2025-02-08",
+    displayDate: "Feb 8, 2025",
+    readTime: "6 min read",
+    url: "https://prakash-raman.medium.com/the-rise-of-smart-machines-iii-from-curiosity-to-mastery-in-ai-55c3c66f6e54?source=friends_link&sk=333d016929685d8d041ca23678b567a3",
+    search: "AI ML learning smart machines curiosity mastery artificial intelligence machine learning"
+  },
+  {
     title: "The rise of Smart Machines II -The Basics",
     category: "AI + ML BASICS",
     description: "A beginner-friendly guide to AI, machine learning, deep learning, LLMs, NLP, Python and the foundations of an AI learning journey.",
