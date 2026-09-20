@@ -181,3 +181,89 @@ footer{background:#fff;border-top:1px solid #e2ebf2}
   .footer-grid{grid-template-columns:1fr;text-align:center;padding:25px 0}
   .footer-grid img{margin:auto}
 }
+
+
+/* Responsive v4: fluid layouts across desktop, tablet and mobile */
+.featured-grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+.earlier-grid{grid-template-columns:repeat(auto-fit,minmax(240px,1fr));}
+.article-card{min-height:100%}
+
+@media (max-width:1100px){
+  .nav-wrap{grid-template-columns:235px 1fr auto;gap:18px}
+  .brand img{width:220px}
+  .main-nav{gap:22px}
+  .hero-grid,.approach-grid{grid-template-columns:1fr;gap:40px;padding:54px 0 62px}
+  .hero-copy{max-width:780px}
+  .canvas-wrap{height:auto;min-height:0;padding:92px 34px 34px;display:grid;gap:18px}
+  .canvas-label{left:34px;top:30px}
+  .canvas-card,.card-one,.card-two,.card-three{
+    position:relative;left:auto;right:auto;top:auto;bottom:auto;width:100%;min-height:126px;
+  }
+  .canvas-connector{display:none}
+  .card-two{margin-left:28px;width:calc(100% - 28px)}
+  .featured-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .earlier-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .insights-hero-grid{grid-template-columns:1fr}
+  .insight-art{display:none}
+}
+
+@media (max-width:760px){
+  :root{--header:84px}
+  .shell{width:min(100% - 30px,1220px)}
+  .site-header{height:var(--header)}
+  .nav-wrap{grid-template-columns:minmax(0,1fr) auto auto;gap:12px}
+  .brand img{width:min(190px,48vw);max-height:52px}
+  .menu-toggle{display:block;border:0;background:none;font-size:25px;color:#168bd1;padding:6px}
+  .main-nav{position:fixed;top:var(--header);left:0;right:0;display:none;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid #e4edf4;box-shadow:0 10px 22px rgba(19,54,90,.08)}
+  .main-nav.open{display:flex}
+  .main-nav a{width:100%;text-align:center;padding:15px;border:0;font-size:15px}
+  .social-nav{gap:12px}
+  .social-nav svg{width:25px;height:25px}
+  .page{padding-top:var(--header)}
+  .hero-grid{display:grid;grid-template-columns:1fr;padding:44px 0 54px;gap:36px}
+  .hero h1{font-size:clamp(48px,13vw,64px);line-height:1.02}
+  .hero-lede{font-size:19px;line-height:1.55;margin-top:24px}
+  .eyebrow{font-size:13px;margin-bottom:18px}
+  .canvas-wrap{padding:78px 14px 16px;border-radius:24px;gap:14px}
+  .canvas-label{left:50%;transform:translateX(-50%);top:28px;width:100%;text-align:center;font-size:13px}
+  .canvas-card,.card-one,.card-two,.card-three{
+    position:relative;inset:auto;width:100%;margin:0;min-height:116px;padding:22px 72px 20px 24px;border-radius:16px;
+  }
+  .canvas-card strong{font-size:clamp(24px,7vw,31px);margin-top:10px}
+  .canvas-card i{right:18px;top:50%;transform:translateY(-50%);width:52px;height:52px;font-size:22px}
+  .canvas-connector{display:none}
+  .approach-grid{padding:52px 0}
+  .approach-intro h2{font-size:clamp(44px,11vw,56px)}
+  .approach-intro>p:last-child{font-size:19px}
+  .question-card{grid-template-columns:1fr 62px;padding:22px 18px 22px 22px}
+  .question-card h3{font-size:22px}
+  .question-card p{font-size:15px}
+  .qicon{height:80px;font-size:29px}
+  .insights-hero-grid{height:auto;padding:54px 0}
+  .insights-hero h2{font-size:clamp(42px,11vw,54px)}
+  .insights-toolbar{align-items:flex-start;flex-direction:column}
+  .insights-toolbar h3{font-size:34px}
+  .toolbar-actions{width:100%;justify-content:flex-start;flex-wrap:wrap;gap:14px}
+  .notify-btn{padding:12px 18px}
+  .featured-grid,.earlier-grid{grid-template-columns:1fr}
+  .article-content{padding:18px}
+  .featured h4{font-size:22px}
+  .article-meta{grid-template-columns:auto auto;gap:8px 16px}
+  .article-meta b{grid-column:1/-1;justify-self:start}
+  .about h2{font-size:46px}
+  .about .lead{font-size:22px}
+  .narrow-page{padding:64px 0}
+  .footer-grid{grid-template-columns:1fr;text-align:center;padding:24px 0}
+  .footer-grid img{margin:auto;width:min(250px,75vw)}
+}
+
+@media (max-width:430px){
+  .shell{width:calc(100% - 24px)}
+  .brand img{width:176px}
+  .social-nav{gap:9px}
+  .social-nav svg{width:23px;height:23px}
+  .hero h1{font-size:46px}
+  .hero-lede{font-size:18px}
+  .canvas-wrap{padding-left:10px;padding-right:10px}
+  .canvas-card strong{font-size:25px}
+}
