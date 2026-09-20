@@ -48,6 +48,56 @@ const ARTICLES = [
     readTime: "5 min read",
     url: "https://prakash-raman.medium.com/from-zero-to-hello-connect-python-to-google-gemini-via-api-key-d83aa427bb5d?source=friends_link&sk=044a569964a916353b6eb3e712af91d3",
     search: "python google gemini api key vscode"
+  },
+  {
+    title: "ROM V: Meet your new Scrum Team Member- An AI Assistant",
+    category: "AI AGENTS + AGILE",
+    description: "Introducing the Agentic Scrum Operating Model (ASOM), an AI-integrated approach to bringing AI assistants into Scrum teams.",
+    date: "2025-05-31",
+    displayDate: "May 31, 2025",
+    readTime: "5 min read",
+    url: "https://prakash-raman.medium.com/rom-v-meet-your-new-scrum-team-member-an-ai-agent-4cbdb4e1b838",
+    search: "AI assistant AI agent agentic scrum operating model ASOM agile scrum"
+  },
+  {
+    title: "ROM-IV: Building your First AI Agent with Hugging Face (Beginner-Friendly Guide)",
+    category: "AI AGENTS",
+    description: "A hands-on beginner walkthrough using Hugging Face Spaces to launch a first AI agent.",
+    date: "2025-05-20",
+    displayDate: "May 20, 2025",
+    readTime: "5 min read",
+    url: "https://prakash-raman.medium.com/rom-iv-building-your-first-ai-agent-with-hugging-face-beginner-friendly-guide-b53ba14cdbb1",
+    search: "AI agent Hugging Face beginner guide spaces"
+  },
+  {
+    title: "Prompt Engineering: Frameworks to optimize LLM interactions",
+    category: "PROMPT ENGINEERING",
+    description: "A practical introduction to prompting frameworks for making LLM interactions more precise, structured and useful.",
+    date: "2025-02-22",
+    displayDate: "Feb 22, 2025",
+    readTime: "6 min read",
+    url: "https://prakash-raman.medium.com/prompt-engineering-frameworks-to-optimize-llms-interactions-0cb218034089",
+    search: "prompt engineering frameworks LLM prompts AI"
+  },
+  {
+    title: "The rise of Smart Machines II -The Basics",
+    category: "AI + ML BASICS",
+    description: "A beginner-friendly guide to AI, machine learning, deep learning, LLMs, NLP, Python and the foundations of an AI learning journey.",
+    date: "2025-01-27",
+    displayDate: "Jan 27, 2025",
+    readTime: "5 min read",
+    url: "https://prakash-raman.medium.com/the-rise-of-smart-machines-ii-the-basics-4041c7d5e8f9",
+    search: "AI ML basics machine learning deep learning LLM NLP smart machines"
+  },
+  {
+    title: "The rise of Smart Machines I-History",
+    category: "AI HISTORY",
+    description: "A look at the evolution from early voice recognition and smart assistants to generative AI and AI-driven platforms.",
+    date: "2024-10-07",
+    displayDate: "Oct 7, 2024",
+    readTime: "4 min read",
+    url: "https://prakash-raman.medium.com/the-rise-of-smart-machines-part-1-a3788ea97897",
+    search: "AI history smart machines voice assistants generative AI evolution"
   }
 ];
 
@@ -75,8 +125,32 @@ const articleCard = (article, type) => {
 const sortedArticles = [...ARTICLES].sort((a,b) => new Date(b.date) - new Date(a.date));
 const recentContainer = document.getElementById("recent-insights");
 const earlierContainer = document.getElementById("earlier-insights");
+const olderContainer = document.getElementById("older-insights");
+
+const olderArticleRow = (article) => {
+  const a = document.createElement("a");
+  a.className = "older-article";
+  a.dataset.search = article.search + " " + article.title + " " + article.category;
+  a.href = article.url;
+  a.target = "_blank";
+  a.rel = "noopener noreferrer";
+  a.innerHTML = `
+    <div class="older-article-main">
+      <p class="micro">${article.category}</p>
+      <h4>${article.title}</h4>
+      <p>${article.description}</p>
+    </div>
+    <div class="older-article-meta">
+      <span>${article.displayDate}</span>
+      <span>${article.readTime}</span>
+      <b>Read article →</b>
+    </div>`;
+  return a;
+};
+
 sortedArticles.slice(0,3).forEach(a => recentContainer?.appendChild(articleCard(a,"featured")));
-sortedArticles.slice(3).forEach(a => earlierContainer?.appendChild(articleCard(a,"compact")));
+sortedArticles.slice(3,6).forEach(a => earlierContainer?.appendChild(articleCard(a,"compact")));
+sortedArticles.slice(6).forEach(a => olderContainer?.appendChild(olderArticleRow(a)));
 
 const navLinks=[...document.querySelectorAll('.main-nav a[data-section]')];
 const sections=navLinks.map(a=>document.getElementById(a.dataset.section)).filter(Boolean);
@@ -109,7 +183,7 @@ const panel=document.getElementById('search-panel');
 const openBtn=document.getElementById('search-open');
 const closeBtn=document.getElementById('search-close');
 const input=document.getElementById('search-input');
-const getCards=()=>[...document.querySelectorAll('.article-card[data-search]')];
+const getCards=()=>[...document.querySelectorAll('[data-search]')];
 openBtn?.addEventListener('click',()=>{
   panel.classList.add('open');
   panel.setAttribute('aria-hidden','false');
