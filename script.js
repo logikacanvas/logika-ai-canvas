@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    title: "Are We Scaling AI, or Just Scaling Experiments?",
+    category: "AI TRANSFORMATION",
+    description: "What the new Accenture and Carnegie Mellon SEI AI Adoption Maturity Model gets right, and how I would use it differently.",
+    date: "2026-09-21",
+    displayDate: "Sep 21, 2026",
+    readTime: "6 min read",
+    url: "https://medium.com/logika-ai-canvas/are-we-scaling-ai-or-just-scaling-experiments-cfe0c6769eb4",
+    search: "AI scaling experiments Accenture Carnegie Mellon SEI adoption maturity model transformation"
+  },
+  {
     title: "How I Built and Launched My Website with AI, from Prompt to Production",
     category: "AI IN PRACTICE",
     description: "The prompts, tools and workflow I used to take an idea through AI-assisted design, GitHub, Cloudflare and a live domain.",
