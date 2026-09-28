@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    title: "How I Built an AI Project Manager Agent Using Free Tools. Part 1",
+    category: "AI AGENTS + PROJECT MANAGEMENT",
+    description: "The goal, architecture and setting up the local AI workflow",
+    date: "2026-09-28",
+    displayDate: "Sep 28, 2026",
+    readTime: "7 min read",
+    url: "https://medium.com/logika-ai-canvas/how-i-built-an-ai-project-manager-agent-using-free-tools-part-1-925b752d548c?source=friends_link&sk=c1fba617c917583ac5697032e74453f7",
+    search: "AI project manager agent free tools project management automation artificial intelligence AI agent software engineering local AI workflow"
+  },
+  {
     title: "Are We Scaling AI, or Just Scaling Experiments?",
     category: "AI TRANSFORMATION",
     description: "What the new Accenture and Carnegie Mellon SEI AI Adoption Maturity Model gets right, and how I would use it differently.",
