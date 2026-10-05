@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    title: "How to Automate Project Management Tasks Using AI. Part 2",
+    category: "AI AGENTS + PROJECT MANAGEMENT",
+    description: "From Asana tasks to AI analysis and Slack updates",
+    date: "2026-10-05",
+    displayDate: "Oct 5, 2026",
+    readTime: "7 min read",
+    url: "https://medium.com/logika-ai-canvas/how-to-automate-project-management-tasks-using-ai-part-2-af8a0d8fcf9b",
+    search: "AI project manager agent automation project management Asana n8n Ollama Slack AI analysis workflow"
+  },
+  {
     title: "How I Built an AI Project Manager Agent Using Free Tools. Part 1",
     category: "AI AGENTS + PROJECT MANAGEMENT",
     description: "The goal, architecture and setting up the local AI workflow",
