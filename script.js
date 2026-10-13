@@ -1,5 +1,15 @@
 const ARTICLES = [
   {
+    title: "Inside My AI Project Manager Agent. Part 3",
+    category: "AI AGENTS + PROJECT MANAGEMENT",
+    description: "From LLM-Centric to Deterministic Architecture",
+    date: "2026-10-13",
+    displayDate: "Oct 13, 2026",
+    readTime: "5 min read",
+    url: "https://medium.com/logika-ai-canvas/inside-my-ai-project-manager-agent-part-3-75105c41c052?source=friends_link&sk=5752f1b230a69768f4d546d0cd348066",
+    search: "AI project manager agent deterministic architecture LLM n8n Asana Ollama Slack project management automation"
+  },
+  {
     title: "How to Automate Project Management Tasks Using AI. Part 2",
     category: "AI AGENTS + PROJECT MANAGEMENT",
     description: "From Asana tasks to AI analysis and Slack updates",
